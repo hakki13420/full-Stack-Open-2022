@@ -1,0 +1,23 @@
+.app{
+    margin: 10px;
+}
+
+.notification{
+    border: 2px solid green;
+    background: gainsboro;
+    border-radius: 5px;
+    color: green;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.error{
+    border: 2px solid red;
+    background: gainsboro;
+    border-radius: 5px;
+    color: red;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 18px;
+}
