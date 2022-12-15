@@ -8,7 +8,8 @@
     "dev": "cross-env MODE_ENV=development nodemon index.js",    
     "lint": "eslint .",
     "test": "cross-env MODE_ENV=test jest --detectOpenHandles --runInBand --forceExit",
-    "test:watch": "cross-env MODE_ENV=test jest --watch tests/blogs.test.js"
+    "test:watch": "cross-env MODE_ENV=test jest --watch tests/blogs.test.js",
+    "start:test":"cross-env MODE_ENV=test node index.js"
   },
   "keywords": [],
   "author": "HAKKI Rabah",

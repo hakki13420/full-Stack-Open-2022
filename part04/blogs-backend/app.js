@@ -27,6 +27,12 @@ app.use('/api/blogs', blogRoutes)
 app.use('/api/users', userRoutes)
 app.use('/api/auth', authRoutes)
 
+if (process.env.MODE_ENV === 'test') {
+  console.log('server running en mode test')
+  const resetRoute = require('./controllers/testRoute')
+  app.use('/testing', resetRoute)
+}
+
 app.use(unknow)
 
 app.use(errorHandler)

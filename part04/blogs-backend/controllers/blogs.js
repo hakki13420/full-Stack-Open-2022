@@ -6,7 +6,7 @@ const { userExtractor } = require('../utils/middleware')
 
 router.get('/', async (req, res, next) => {
   try {
-    const blogs = await Blog.find({})
+    const blogs = await Blog.find({}).populate('user')
     return res.status(200).json(blogs)
   } catch (error) {
     next(error)
