@@ -1,0 +1,10 @@
+.fontions-section{
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+}
+.fontions-section .button{
+    flex: 1;
+}

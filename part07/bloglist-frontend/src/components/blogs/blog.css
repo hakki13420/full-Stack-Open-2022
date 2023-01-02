@@ -1,0 +1,18 @@
+.blog{
+    padding: 10px;
+    color: white;    
+}
+
+.body a{    
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+.likes{
+    display: flex;
+    gap: 10px;
+}
+.blog-footer{
+    display: flex;
+    justify-content: space-between;
+}

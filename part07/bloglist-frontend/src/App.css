@@ -1,0 +1,11 @@
+.header{
+    padding: 12px 30px; 
+}
+.App, .header{
+    color: black;    
+    background-color: #EEE;
+}
+.App{
+    padding: 0px 30px;
+    height: calc(100vh - 140px);
+}

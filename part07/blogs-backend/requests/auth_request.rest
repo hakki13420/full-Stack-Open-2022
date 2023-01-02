@@ -1,0 +1,21 @@
+POST http://localhost:3001/api/auth/login
+Content-Type: application/json
+
+{
+    "username":"root",
+    "password":"root"
+}
+###
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzODIxZGYwMDgyMDVlMTM1OTc3YzhjZiIsInVzZXJuYW1lIjoicm9vdCIsImlhdCI6MTY2OTQ4NTY4OH0.L37rUC_32vHqJOxMxj1vOZ0T2Xz6HMe8vbZScKdajVE
+                      
+{
+    "title":"blog with token",
+    "author":"blog with token author",
+    "url":"blog with token url"
+}
+
+###
+DELETE http://localhost:3001/api/blogs/63820788b359287f795d970b
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzODIxZGYwMDgyMDVlMTM1OTc3YzhjZiIsInVzZXJuYW1lIjoicm9vdCIsImlhdCI6MTY2OTQ4NTY4OH0.L37rUC_32vHqJOxMxj1vOZ0T2Xz6HMe8vbZScKdajVE
